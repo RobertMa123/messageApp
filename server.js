@@ -68,6 +68,7 @@ app.post("/save-message", function (req, res) {
         .then(function (new_msg) {
             console.log(new_msg._id);
             res.redirect("/");
+
         }).catch(function (err) {
         console.log(err);
     });
